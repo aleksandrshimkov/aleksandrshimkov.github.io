@@ -1,9 +1,8 @@
 body {
 	background-color: #f3f5f7;
 }
-
 h1 {
-font-family: Arvo;
+font-family: 'Arvo';
 color:  #3b3e6a;
 font-size: 29.71px;
 font-weight: 400;
@@ -12,7 +11,7 @@ transform: scaleY(1.01);
 margin-bottom: 10rem;
 }
 .first-title {
-font-family: Arvo;
+font-family: 'Arvo';
 color:  #3b3e6a;
 font-size: 22px;
 font-weight: 400;
@@ -30,4 +29,8 @@ line-height: 30px;
 }
 img {
 	height: 140px;
+}
+@font-face {
+font-family: Arvo; 
+src: url(../fonts/arvo_[allfont.ru].ttf);
 }

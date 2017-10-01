@@ -1,0 +1,57 @@
+.block {
+  display: inline-block;
+  margin-left: 20px;
+  transition: all 1s;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+.block:hover {
+  border-radius: 50px;
+}
+.block-1 {
+  background: url(../img/33608c5112.jpg) no-repeat center center;
+  background-size: cover;
+}
+.block-2 {
+  background: url(../img/0625_130908-59c363f5d9a67__605-300x300.jpg) no-repeat center center;
+  background-size: cover;
+}
+.block-3 {
+  background: url(../img/816652744.jpg) no-repeat center center;
+  background-size: cover;
+}
+.block-4 {
+  background: url(../img/sepija-foto-2023-300x300.jpg) no-repeat center center;
+  background-size: cover;
+}
+.wrap {
+  height: 100%;
+  border-radius: 150px;
+  text-align: center;
+  transition: all 1s;
+  opacity: 0;
+}
+.wrap-btn {
+  position: relative;
+  margin-top: 50%;
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border-style: none;
+  background-color: green;
+  color: white;
+  outline: none;
+  font-family: sans-serif;
+  padding: 5px 15px;
+}
+.wrap:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50px;
+  opacity: 1;
+}
+.wrap-text {
+  bottom: -45%;
+  position: relative;
+  color: white;
+}

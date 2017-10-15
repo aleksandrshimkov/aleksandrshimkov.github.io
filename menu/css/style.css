@@ -96,6 +96,6 @@ section {
 }
 @media (max-width: 520px) {
   section {
-    margin-bottom: 100vh;
+    height: 100%;
   }
 }

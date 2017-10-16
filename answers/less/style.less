@@ -1,0 +1,75 @@
+html {
+	font-size: 10px;
+}
+.main{
+	background-image: url(../img/background.jpg);
+	width: 100%;
+	height: 100vh;
+	&_title{
+		font-family:'Ubuntu', sans-serif;
+		color:  #0bbaf0;
+		font-size: 2.8rem;/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 8rem;
+		line-height: 3rem;
+		display: block;
+	}
+	&_text{
+		font-family:'Ubuntu',sans-serif;
+		color: rgb(49, 199, 243);
+		font-size: 1.9rem;
+		font-weight: 400;
+		text-align: center;
+		text-transform: uppercase;
+		display: block;
+	}
+	&_line{
+		display: inline-block;
+		width: 10rem;
+		content:'';
+		border :.5px solid rgb(204, 206, 207);
+		margin-left: 13rem;
+		margin-bottom: 2rem;
+	}
+}
+.tab {
+	margin-bottom: 1rem;
+	text-decoration: none;
+	font-family:'Ubuntu',sans-serif;
+	font-size: 1.9rem;
+	font-weight: 400;
+	text-align: center;
+	background-color: rgb(11, 186, 240);
+	display: block;
+	padding: 2rem;
+	color:#fff!important;
+	cursor:pointer;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.content{
+	display: none;
+	& p{
+		font-family:'Ubuntu',sans-serif;
+		color:  #535353;
+		font-size: 1.8rem;
+		font-weight: 400;
+		text-align: left;
+		text-align: center;
+		background-color: #fff;
+		border-width: 4px;
+		border-color:  #dcdcdc;
+		border-style: solid;
+		border-top:none;
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px;
+		padding: 1.4rem;
+		margin-top: -1rem;
+	}
+	&-1{
+		display: inline-block;
+	}
+}

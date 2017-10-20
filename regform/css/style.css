@@ -1,0 +1,140 @@
+* {
+  font-size: 10px;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/background.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 10rem;
+}
+.main-block {
+  width: 110rem;
+  height: 80rem;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+.main-block:after {
+  display: inline-block;
+  content: '';
+  background: url(../img/bubbles-1.png) no-repeat center center;
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  left: 6rem;
+  top: -7rem;
+}
+.main-block:before {
+  display: inline-block;
+  content: '';
+  background: url(../img/bubbles-2.png) no-repeat center center;
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  right: 6rem;
+  bottom: -7rem;
+}
+.main-pictures {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+.main-pictures__item-1 {
+  margin-top: 16rem;
+  margin-left: 6rem;
+}
+.main-form {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  margin-top: 8%;
+}
+.main-form__title {
+  font-family: 'OpenSans', sans-serif;
+  color: #000000;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  text-align: left;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.main-form__text {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  text-align: center;
+  display: block;
+}
+.main-form__input {
+  width: 60%;
+  height: 7rem;
+  margin: 0 20%;
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  color: #7b7b7b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  border: none;
+  border-bottom: 1px solid #aeaeae;
+  outline: none;
+  padding-left: 3.5rem;
+}
+.main-form__name {
+  background: url(../img/user.png) no-repeat center left;
+  margin-top: 4rem;
+}
+.main-form__email {
+  background: url(../img/mail.png) no-repeat center left;
+}
+.main-form__password {
+  background: url(../img/password.png) no-repeat center left;
+}
+.main-form__btn {
+  display: block;
+  font-family: 'OpenSans', sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  text-align: left;
+  background-color: #82c5c3;
+  padding: 0.5rem 4rem;
+  border: none;
+  border-radius: 50px;
+  outline: none:;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+}
+.main-form__question {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  text-align: center;
+  padding-right: 1.5rem;
+  display: inline;
+  margin-left: 12rem;
+}
+.main-form__sigin {
+  font-family: 'Ubuntu', sans-serif;
+  color: #f69a7a;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  text-align: center;
+  text-decoration: none;
+}
+.main-form__sigin:hover {
+  text-decoration: none;
+}
+.main-form__sigin:visited {
+  color: #f69a7a;
+}

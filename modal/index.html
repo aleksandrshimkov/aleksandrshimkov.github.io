@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Very mnogo modal okon</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <a href="#login-window" class="login-btn">login</a>
+
+    <div class="login">	
+    	<form action="" class="login-form">
+    		<a href="" class="login-form__close">&times;</a>
+    		<h3 class="login-form__title">Login</h3>
+    		<input class="login-form__input" type="text" placeholder="Enter your login">
+    		<input type="text" class="login-form__input" placeholder="Enter your password">
+    		<button class="login-form__btn">login</button>
+    	</form>
+    </div>
+    <img src="img/logo-star.jpg" alt="" class="click-img">
+    <div class="img-text">
+    	<a href="" class="login-form__close close">&times</a>
+    	<p class="img-text__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil mollitia quia debitis expedita maxime similique necessitatibus magni, nemo doloremque impedit. Quia, est vel. Culpa commodi cumque voluptates atque laudantium! Dolor, quia adipisci, asperiores laborum tempore eos. Corporis earum voluptatem libero ut, saepe quidem aspernatur, repudiandae tempore nemo incidunt, quis porro.</p>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+    	var link = $('.login-btn');
+    	var login = $('.login');
+    	var close = $('.login-form__close');
+    	var show = $('.click-img');
+    	var text = $('.img-text');
+
+    	link.click(function(){
+    		login.fadeIn();
+    	});
+    	close.click(function(){
+    		login.fadeOut();
+
+    	});
+    	show.click(function(){
+    		text.fadeIn();
+    	});
+    	close.click(function(){
+    		show.fadeOut();
+
+    	});
+    </script>
+  </body>
+</html>

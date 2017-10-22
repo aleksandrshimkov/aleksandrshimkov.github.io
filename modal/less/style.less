@@ -1,0 +1,144 @@
+*{
+	font-size: 	10px;
+}
+.login{
+	width: 400px;
+	height: 500px;
+	border-radius:5px;
+	border:2px solid #000;
+	display: none;
+	position: absolute;
+	margin-left: 50%;
+	left:-200px;
+	&-btn {
+		position: absolute;	
+		text-decoration: none;	
+		font-size: 1.2rem;	
+		text-transform: uppercase;	
+		border:1px solid #000;	
+		margin: 20px;	
+		padding: 1rem 4rem;	
+		border-radius:5px;
+		color:#000;
+		bottom: 50rem	;
+
+		&:hover {
+			transition: 	all 0.5s;
+			margin-top: 15px;	
+			text-decoration: none;
+			color:#fff;	
+			background-color: rgba(0,0,0,1);
+			box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+		}
+
+	}
+
+	&-form {
+
+		&__title{
+			color: #000;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 20px;
+			font-size: 2rem;
+
+		}
+
+		&__close{
+			display: inline-block;
+			color: #000;
+			font-size: 3rem;
+			margin-top: 20px;
+			margin-left: 350px;
+
+			&:hover{
+				transition: all .5s;
+				text-decoration: none;
+				color:#c0392b;
+			}
+
+		}
+
+		&__input{
+			font-size: 1.5rem;
+			color: #aeaeae;
+			display: block;
+			margin-left: 21%;
+			margin-top: 4rem;
+			padding: 1.5rem 2rem;
+			border-radius:5px;
+			outline:none;
+			border:1px solid #000;
+
+			&:focus{
+				transition: all .8s;
+				background-color:#000;
+				
+			}
+
+		}
+
+		&__btn{
+			display: block;
+			color:#fff;
+			margin-left: 34%;
+			margin-top: 4rem;
+			font-size: 1.5rem	;
+			text-align: center;
+			background-color: #000;
+			border:1px solid #000;
+			border-radius:5px;
+			padding: 1rem 4rem;
+
+			&:hover{
+				color:#c0392b;
+			}
+			
+		}
+
+	}
+
+}
+
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}
+:-moz-placeholder           {color:#000;}
+:-ms-input-placeholder      {color:#000;}
+
+:focus::-webkit-input-placeholder {color:#c0392b;}
+:focus::-moz-placeholder          {color:#c0392b;}
+:focus:-moz-placeholder           {color:#c0392b;}
+:focus:-ms-input-placeholder      {color:#c0392b;}
+
+.click-img{
+	display: block;
+	margin: 2rem;
+	border-radius:20px;
+}
+.close{
+	margin-left: 28rem;
+	color: #fff;
+	position: absolute;
+	z-index:100;
+
+	&:hover{
+		color:#aeaeae;
+	}
+}
+.img-text{
+	display: none;
+	position: absolute;
+	width: 320px;
+	height: 320px;
+	background-color: rgba(0,0,0,.8);
+	margin-left: 2rem;
+	margin-top: -34rem;
+	z-index:5;
+	border-radius:20px;
+
+	&__item{
+		color: #fff;
+		text-align: center;
+		margin-top: 10rem;
+	}
+}

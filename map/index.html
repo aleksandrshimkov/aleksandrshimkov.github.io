@@ -22,6 +22,24 @@
 		</form>
 	</div>
 	</div>
+	<section>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.5387502458348!2d20.522883715998834!3d54.717737778805564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e31609675eb955%3A0xe39fa90bbde62fb4!2z0J7QsdC70LDRgdGC0L3QsNGPINC60LvQuNC90LjRh9C10YHQutCw0Y8g0LHQvtC70YzQvdC40YbQsCDQmtCw0LvQuNC90LjQvdCz0YDQsNC00YHQutC-0Lkg0L7QsdC70LDRgdGC0Lg!5e0!3m2!1sru!2sru!4v1509999191292" width="100%" height="720" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</section>
+<section id="map">
+	 <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+        <script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [54.98, 82.89],
+                    zoom: 10
+                });
+
+                DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
+            });
+        </script>
+</section>
 	
 </body>
 </html>

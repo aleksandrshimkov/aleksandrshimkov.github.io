@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="map">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada4449fbe47bb6d5e1751ac45cec83e31fed03afb3945760d3bc4dc0bdcb53e7&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada4449fbe47bb6d5e1751ac45cec83e31fed03afb3945760d3bc4dc0bdcb53e7&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
 		<div class="block">
 		<form action="" class="form">
 			<p class="form-title">Contact</p>
@@ -33,10 +33,11 @@
             DG.then(function () {
                 map = DG.map('map', {
                     center: [54.98, 82.89],
-                    zoom: 10
+                    zoom: 15
                 });
 
                 DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
+                map.scrollWheelZoom.disable();
             });
         </script>
 </section>

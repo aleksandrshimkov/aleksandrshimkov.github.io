@@ -1,41 +1,22 @@
-<?php 
-
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
-$email = $_POST['user_email']; 
-
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
-
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
-
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.yandex.ru';  																							// Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'maketstore39@yandex.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '6857v6857'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
-
-$mail->setFrom('maketstore39@yandex.ru'); // от кого будет уходить письмо?
-$mail->addAddress('maketstore39@yandex.ru');     // Кому будет уходить письмо 
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-$mail->addAttachment($_FILES['upload']['tmp_name'], $_FILES['upload']['name']);    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
-
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email. ';
-
-$mail->AltBody = '';
-
-if(!$mail->send()) {
-    echo 'Error';
-} else {
-    header('location: index.html');
-}
+<?php
+//Принимаем постовые данные
+$name=$_POST['user_name'];
+$phone=$_POST['user_phone'];
+$email=$_POST['user_email'];
+//Тут указываем на какой ящик посылать письмо
+$to = "maketstore39@yandex.ru";
+//Далее идет тема и само сообщение
+// Тема письма
+$subject = "Заявка с Maket Store";
+// Сообщение письма
+$message = "
+Имя пользователя: ".htmlspecialchars($name)."<br />
+Телефон: <a href='tel:$phone'>".htmlspecialchars($phone)."</a> <br />
+Почта: ".htmlspecialchars($email)."";
+// Отправляем письмо при помощи функции mail();
+$headers = "From: maketstore39.ru <admin@maketstore39.ru>\r\nContent-type: text/html; charset=UTF-8 \r\n";
+mail ($to, $subject, $message, $headers);
+// Перенаправляем человека на страницу благодарности и завершаем скрипт
+header('Location: index.html');
+exit();
 ?>
